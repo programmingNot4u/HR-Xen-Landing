@@ -19,7 +19,7 @@ const PricingPage = () => {
       name: "Sapphire Series",
       description: "Perfect for small teams getting started",
       monthlyPrice: 2000,
-      annualPrice: 19200, // 2000 * 12 * 0.8 (20% discount)
+      annualPrice: 21600, // 2000 * 12 * 0.9 (10% discount)
       userRange: "1-50",
       features: [
         "Up to 50 employees",
@@ -38,7 +38,7 @@ const PricingPage = () => {
       name: "Ruby Series",
       description: "Ideal for growing companies",
       monthlyPrice: 2500,
-      annualPrice: 24000, // 2500 * 12 * 0.8 (20% discount)
+      annualPrice: 27000, // 2500 * 12 * 0.9 (10% discount)
       userRange: "51-100",
       features: [
         "Up to 100 employees",
@@ -59,7 +59,7 @@ const PricingPage = () => {
       name: "Emerald Series",
       description: "For medium-sized organizations",
       monthlyPrice: 3500,
-      annualPrice: 33600, // 3500 * 12 * 0.8 (20% discount)
+      annualPrice: 37800, // 3500 * 12 * 0.9 (10% discount)
       userRange: "101-300",
       features: [
         "Up to 300 employees",
@@ -81,7 +81,7 @@ const PricingPage = () => {
       name: "Amethyst Series",
       description: "For large organizations",
       monthlyPrice: 6000,
-      annualPrice: 57600, // 6000 * 12 * 0.8 (20% discount)
+      annualPrice: 64800, // 6000 * 12 * 0.9 (10% discount)
       userRange: "301-600",
       features: [
         "Up to 600 employees",
@@ -104,7 +104,7 @@ const PricingPage = () => {
       name: "Pearl Series",
       description: "For very large organizations",
       monthlyPrice: 10000,
-      annualPrice: 96000, // 10000 * 12 * 0.8 (20% discount)
+      annualPrice: 108000, // 10000 * 12 * 0.9 (10% discount)
       userRange: "601-1000",
       features: [
         "Up to 1000 employees",
@@ -166,7 +166,7 @@ const PricingPage = () => {
     },
     {
       name: "Priority Support",
-      description: "24/7 phone and chat support",
+      description: "Onsite Support",
       price: 2000,
       priceUnit: "👤",
       isDiscussion: false,
@@ -205,19 +205,19 @@ const PricingPage = () => {
       <section className="py-8">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center">
-            <Tabs
-              value={isAnnual ? "annual" : "monthly"}
-              onValueChange={(value) => setIsAnnual(value === "annual")}>
-              <TabsList className="grid w-full max-w-md grid-cols-2">
-                <TabsTrigger value="monthly">Monthly</TabsTrigger>
-                <TabsTrigger value="annual" className="relative">
-                  Annual
-                  <span className="absolute -top-2 -right-2 bg-primary text-white text-xs px-2 py-1 rounded-full">
-                    Save 20%
-                  </span>
-                </TabsTrigger>
-              </TabsList>
-            </Tabs>
+            <div className="relative">
+              <Tabs
+                value={isAnnual ? "annual" : "monthly"}
+                onValueChange={(value) => setIsAnnual(value === "annual")}>
+                <TabsList className="grid w-full max-w-md grid-cols-2">
+                  <TabsTrigger value="monthly">Monthly</TabsTrigger>
+                  <TabsTrigger value="annual">Annual</TabsTrigger>
+                </TabsList>
+              </Tabs>
+              <span className="absolute -top-2 -right-2 bg-primary text-white text-xs px-2 py-1 rounded-full shadow-lg pointer-events-none z-10">
+                Save 10%
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -259,7 +259,9 @@ const PricingPage = () => {
                           {typeof plan.monthlyPrice === "string"
                             ? plan.monthlyPrice
                             : `Tk. ${
-                                isAnnual ? plan.annualPrice : plan.monthlyPrice
+                                isAnnual
+                                  ? Math.round(plan.annualPrice / 12)
+                                  : plan.monthlyPrice
                               }`}
                         </span>
                         {typeof plan.monthlyPrice !== "string" && (
@@ -271,7 +273,7 @@ const PricingPage = () => {
                       {isAnnual && typeof plan.monthlyPrice !== "string" && (
                         <p className="text-sm text-green-600 mt-2">
                           Save Tk. {plan.monthlyPrice * 12 - plan.annualPrice}{" "}
-                          annually (20% off)
+                          annually (10% off)
                         </p>
                       )}
                       <div className="text-sm text-muted-foreground mt-2">
@@ -429,7 +431,7 @@ const PricingPage = () => {
               {
                 question: "Do you offer discounts for annual billing?",
                 answer:
-                  "Yes! Annual billing saves you 20% compared to monthly billing. This discount is automatically applied when you choose annual billing.",
+                  "Yes! Annual billing saves you 10% compared to monthly billing. This discount is automatically applied when you choose annual billing.",
               },
               {
                 question: "Is there a setup fee?",

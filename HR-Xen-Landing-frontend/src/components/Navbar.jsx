@@ -46,6 +46,18 @@ const Navbar = () => {
       description: "Vacation requests, sick leave, and absence tracking.",
     },
     {
+      title: "Assets Management",
+      href: "/features/assets",
+      description:
+        "Track and manage company assets, equipment, and resource allocation.",
+    },
+    {
+      title: "Recruitment",
+      href: "/features/recruitment",
+      description:
+        "Streamline hiring process with applicant tracking and interview management.",
+    },
+    {
       title: "Reporting & Analytics",
       href: "/features/analytics",
       description:

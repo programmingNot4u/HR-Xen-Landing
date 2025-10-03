@@ -7,10 +7,12 @@ import HomePage from "./pages/HomePage";
 import PricingPage from "./pages/PricingPage";
 import SupportPage from "./pages/SupportPage";
 import AnalyticsPage from "./pages/features/AnalyticsPage";
+import AssetsPage from "./pages/features/AssetsPage";
 import CoreHRPage from "./pages/features/CoreHRPage";
 import EmployeeManagementPage from "./pages/features/EmployeeManagementPage";
 import LeaveManagementPage from "./pages/features/LeaveManagementPage";
 import PayrollPage from "./pages/features/PayrollPage";
+import RecruitmentPage from "./pages/features/RecruitmentPage";
 import TimeAttendancePage from "./pages/features/TimeAttendancePage";
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
             element={<LeaveManagementPage />}
           />
           <Route path="/features/analytics" element={<AnalyticsPage />} />
+          <Route path="/features/assets" element={<AssetsPage />} />
+          <Route path="/features/recruitment" element={<RecruitmentPage />} />
         </Routes>
       </Layout>
     </Router>

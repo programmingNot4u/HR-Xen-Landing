@@ -32,76 +32,82 @@ const FAQPreview = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Column */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-6">
-            <div className="space-y-4">
+            className="space-y-4 sm:space-y-6">
+            <div className="space-y-3 sm:space-y-4">
               <div className="flex items-center space-x-2">
-                <HelpCircle className="h-6 w-6 text-primary" />
-                <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+                <HelpCircle className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
                   Have Questions?
                 </h2>
               </div>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-muted-foreground">
                 We've compiled answers to the most common questions about HRM
                 Pro. Can't find what you're looking for? Our support team is
                 here to help.
               </p>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-center space-x-3 p-4 bg-primary/5 rounded-lg">
-                <div className="h-10 w-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-semibold">1</span>
+            <div className="space-y-3 sm:space-y-4">
+              <div className="flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-primary/5 rounded-lg">
+                <div className="h-8 w-8 sm:h-10 sm:w-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-semibold text-sm sm:text-base">
+                    1
+                  </span>
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground">
+                  <div className="text-sm sm:text-base font-semibold text-foreground">
                     Quick Setup
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-xs sm:text-sm text-muted-foreground">
                     Get started in minutes, not months
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center space-x-3 p-4 bg-primary/5 rounded-lg">
-                <div className="h-10 w-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-semibold">2</span>
+              <div className="flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-primary/5 rounded-lg">
+                <div className="h-8 w-8 sm:h-10 sm:w-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-semibold text-sm sm:text-base">
+                    2
+                  </span>
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground">
+                  <div className="text-sm sm:text-base font-semibold text-foreground">
                     Expert Support
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-xs sm:text-sm text-muted-foreground">
                     24/7 support from HR experts
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center space-x-3 p-4 bg-primary/5 rounded-lg">
-                <div className="h-10 w-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-semibold">3</span>
+              <div className="flex items-center space-x-2 sm:space-x-3 p-3 sm:p-4 bg-primary/5 rounded-lg">
+                <div className="h-8 w-8 sm:h-10 sm:w-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-semibold text-sm sm:text-base">
+                    3
+                  </span>
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground">
+                  <div className="text-sm sm:text-base font-semibold text-foreground">
                     Easy Migration
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-xs sm:text-sm text-muted-foreground">
                     Seamless data transfer from any system
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="pt-4">
-              <p className="text-sm text-muted-foreground">
+            <div className="pt-3 sm:pt-4">
+              <p className="text-xs sm:text-sm text-muted-foreground">
                 Still have questions?{" "}
                 <a
                   href="/contact"
@@ -119,20 +125,20 @@ const FAQPreview = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-4">
+            className="space-y-3 sm:space-y-4">
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="border border-border rounded-lg px-4">
-                  <AccordionTrigger className="text-left hover:no-underline py-4">
-                    <span className="font-medium text-foreground">
+                  className="border border-border rounded-lg px-3 sm:px-4">
+                  <AccordionTrigger className="text-left hover:no-underline py-3 sm:py-4">
+                    <span className="text-sm sm:text-base font-medium text-foreground">
                       {faq.question}
                     </span>
                   </AccordionTrigger>
-                  <AccordionContent className="pb-4">
-                    <p className="text-muted-foreground leading-relaxed">
+                  <AccordionContent className="pb-3 sm:pb-4">
+                    <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       {faq.answer}
                     </p>
                   </AccordionContent>
@@ -146,23 +152,23 @@ const FAQPreview = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
-              className="mt-8 p-6 bg-muted/50 rounded-lg border">
-              <h3 className="font-semibold text-foreground mb-2">
+              className="mt-6 sm:mt-8 p-4 sm:p-6 bg-muted/50 rounded-lg border">
+              <h3 className="text-sm sm:text-base font-semibold text-foreground mb-2">
                 Need More Help?
               </h3>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">
                 Check out our comprehensive documentation or schedule a call
                 with our experts.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                 <a
                   href="/documentation"
-                  className="text-sm text-primary hover:underline font-medium">
+                  className="text-xs sm:text-sm text-primary hover:underline font-medium">
                   View Documentation →
                 </a>
                 <a
                   href="/contact"
-                  className="text-sm text-primary hover:underline font-medium">
+                  className="text-xs sm:text-sm text-primary hover:underline font-medium">
                   Schedule a Call →
                 </a>
               </div>
