@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 const ClientLogos = () => {
   const logos = [
-    { name: "TechCorp", width: 120 },
+    { name: "RP Textile & Fashion", width: 140 },
     { name: "InnovateLab", width: 140 },
-    { name: "DataFlow", width: 110 },
+    { name: "RP Creations & Apparels Ltd", width: 140 },
     { name: "CloudSync", width: 130 },
-    { name: "FutureWorks", width: 125 },
+    { name: "C&M Fashion", width: 125 },
     { name: "NextGen", width: 100 },
   ];
 

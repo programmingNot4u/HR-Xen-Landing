@@ -105,23 +105,7 @@ const FinalCTA = () => {
             <p className="text-white/80 mb-4 sm:mb-6 text-sm sm:text-base">
               Trusted by companies of all sizes
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-8 opacity-60">
-              <div className="h-6 sm:h-8 w-16 sm:w-24 bg-white/20 rounded flex items-center justify-center">
-                <span className="text-xs font-semibold">Company A</span>
-              </div>
-              <div className="h-6 sm:h-8 w-16 sm:w-24 bg-white/20 rounded flex items-center justify-center">
-                <span className="text-xs font-semibold">Company B</span>
-              </div>
-              <div className="h-6 sm:h-8 w-16 sm:w-24 bg-white/20 rounded flex items-center justify-center">
-                <span className="text-xs font-semibold">Company C</span>
-              </div>
-              <div className="h-6 sm:h-8 w-16 sm:w-24 bg-white/20 rounded flex items-center justify-center">
-                <span className="text-xs font-semibold">Company D</span>
-              </div>
-              <div className="h-6 sm:h-8 w-16 sm:w-24 bg-white/20 rounded flex items-center justify-center">
-                <span className="text-xs font-semibold">Company E</span>
-              </div>
-            </div>
+
           </motion.div>
 
           {/* Security Badges */}

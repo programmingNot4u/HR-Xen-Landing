@@ -2,10 +2,11 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
+import BlogPostDetail from "./pages/BlogPostDetail";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
-import PricingPage from "./pages/PricingPage";
-import SupportPage from "./pages/SupportPage";
+import PricingPageDynamic from "./pages/PricingPageDynamic";
+import SupportPageDynamic from "./pages/SupportPageDynamic";
 import AnalyticsPage from "./pages/features/AnalyticsPage";
 import AssetsPage from "./pages/features/AssetsPage";
 import CoreHRPage from "./pages/features/CoreHRPage";
@@ -22,9 +23,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/pricing" element={<PricingPage />} />
-          <Route path="/support" element={<SupportPage />} />
+          <Route path="/pricing" element={<PricingPageDynamic />} />
+          <Route path="/support" element={<SupportPageDynamic />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostDetail />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/features/core-hr" element={<CoreHRPage />} />
           <Route

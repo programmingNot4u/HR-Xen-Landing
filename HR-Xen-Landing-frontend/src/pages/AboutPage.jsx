@@ -61,7 +61,7 @@ const AboutPage = () => {
         "Founder and CEO, driving HR-Xen's mission to transform workforce management.",
       social: {
         facebook: "https://www.facebook.com/muttakin.hasanwakil",
-        linkedin: "https://www.linkedin.com/in/md-hossan-imam-441963243",
+        linkedin: "https://www.linkedin.com/in/hassanwakil",
         whatsapp: "https://wa.me/8801730215863",
       },
     },
@@ -73,7 +73,7 @@ const AboutPage = () => {
         "Oversees day-to-day operations, ensuring seamless service delivery and customer success across all markets.",
       social: {
         facebook: "https://www.facebook.com/hossain.imam.rony.5.me/",
-        linkedin: "https://linkedin.com/in/hossain-rony",
+        linkedin: "https://www.linkedin.com/in/md-hossan-imam-441963243",
         whatsapp: "https://wa.me/8801747742519",
       },
     },
@@ -84,9 +84,9 @@ const AboutPage = () => {
       description:
         "Strategic leader with extensive experience in business development and partnerships. Drives growth initiatives and strategic partnerships to expand HR-Xen's global presence.",
       social: {
-        facebook: "https://facebook.com/monir.monim",
-        linkedin: "https://linkedin.com/in/monir-monim",
-        whatsapp: "https://wa.me/8801234567892",
+        facebook: "https://www.facebook.com/share/1FE2xdB2EJ/",
+        linkedin: "https://www.linkedin.com/in/monir-hossain-monim-90997915a",
+        whatsapp: "https://wa.me/8801626949506",
       },
     },
   ];

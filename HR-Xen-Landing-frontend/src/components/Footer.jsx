@@ -1,12 +1,4 @@
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { Facebook, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -29,24 +21,18 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61576825140649"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+                href="https://www.linkedin.com/company/xenover-bangladesh/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -57,7 +43,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/features"
+                  to="/features/core-hr"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Features
                 </Link>
@@ -67,27 +53,6 @@ const Footer = () => {
                   to="/pricing"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Pricing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/demo"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Demo
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/integrations"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Integrations
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/api"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  API
                 </Link>
               </li>
             </ul>
@@ -111,27 +76,6 @@ const Footer = () => {
                   Blog
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/careers"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/press"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Press
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/partners"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Partners
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -153,34 +97,24 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/documentation"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Documentation
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/status"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  System Status
-                </Link>
-              </li>
             </ul>
 
             <div className="space-y-2 pt-4">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>support@hrmpro.com</span>
+                <span>support@hrxen.com</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <a
+                  href="tel:+8801626949506"
+                  className="hover:text-primary transition-colors">
+                  +880 1626-949506
+                </a>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>San Francisco, CA</span>
+                <span>Sector #10, Uttara, Dhaka</span>
               </div>
             </div>
           </div>
@@ -193,21 +127,7 @@ const Footer = () => {
               © 2024 HR-Xen. All rights reserved.
             </div>
             <div className="flex space-x-6">
-              <Link
-                to="/privacy"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Privacy Policy
-              </Link>
-              <Link
-                to="/terms"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Terms of Service
-              </Link>
-              <Link
-                to="/cookies"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Cookie Policy
-              </Link>
+              {/* Legal links removed as they don't have corresponding pages */}
             </div>
           </div>
         </div>

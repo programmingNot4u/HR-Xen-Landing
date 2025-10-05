@@ -7,28 +7,28 @@ const Testimonials = () => {
     {
       quote:
         "HR-Xen has completely transformed how we manage our 500+ employees. The automated payroll alone saves us 20 hours every month, and the employee self-service portal has reduced HR inquiries by 60%.",
-      author: "Sarah Johnson",
-      role: "VP of Human Resources",
-      company: "TechCorp Solutions",
-      avatar: "SJ",
+      author: "Sharif Ahmed",
+      role: "Manager, HR",
+      company: "RP Creations & Apparels Ltd",
+      avatar: "SA",
       rating: 5,
     },
     {
       quote:
         "The analytics and reporting features give us insights we never had before. We can now make data-driven decisions about our workforce, and the compliance features ensure we're always up to date with regulations.",
-      author: "Michael Chen",
-      role: "CEO",
-      company: "InnovateLab",
-      avatar: "MC",
+      author: "Mehedi Hassan",
+      role: "AGM of Human Resource",
+      company: "C&M Fashion",
+      avatar: "MH",
       rating: 5,
     },
     {
       quote:
         "Implementation was seamless, and the support team was incredible. Within two weeks, we had everything migrated and our team was fully trained. The ROI was immediate and continues to grow.",
-      author: "Emily Rodriguez",
-      role: "HR Director",
-      company: "DataFlow Inc",
-      avatar: "ER",
+      author: "Anis Hamza Qureishi",
+      role: "Manager, HR & Admin",
+      company: "RP Textile & Fashion",
+      avatar: "AH",
       rating: 5,
     },
   ];

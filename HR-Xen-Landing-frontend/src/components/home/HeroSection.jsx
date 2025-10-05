@@ -105,20 +105,7 @@ const HeroSection = () => {
               <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">
                 Trusted by 10,000+ companies worldwide
               </p>
-              <div className="flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 opacity-60">
-                <div className="h-6 sm:h-8 w-16 sm:w-24 bg-muted rounded flex items-center justify-center">
-                  <span className="text-xs font-semibold">Company A</span>
-                </div>
-                <div className="h-6 sm:h-8 w-16 sm:w-24 bg-muted rounded flex items-center justify-center">
-                  <span className="text-xs font-semibold">Company B</span>
-                </div>
-                <div className="h-6 sm:h-8 w-16 sm:w-24 bg-muted rounded flex items-center justify-center">
-                  <span className="text-xs font-semibold">Company C</span>
-                </div>
-                <div className="h-6 sm:h-8 w-16 sm:w-24 bg-muted rounded flex items-center justify-center">
-                  <span className="text-xs font-semibold">Company D</span>
-                </div>
-              </div>
+
             </motion.div>
           </motion.div>
 
