@@ -1,7 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import AboutPage from "./pages/AboutPage";
-import BlogPage from "./pages/BlogPage";
+import BlogPageDynamic from "./pages/BlogPageDynamic";
 import BlogPostDetail from "./pages/BlogPostDetail";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
@@ -25,7 +25,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/pricing" element={<PricingPageDynamic />} />
           <Route path="/support" element={<SupportPageDynamic />} />
-          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog" element={<BlogPageDynamic />} />
           <Route path="/blog/:slug" element={<BlogPostDetail />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/features/core-hr" element={<CoreHRPage />} />

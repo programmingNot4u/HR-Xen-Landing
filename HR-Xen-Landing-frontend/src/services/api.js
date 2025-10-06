@@ -1,6 +1,7 @@
 // API service for HR-Xen Landing Backend
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://13.215.98.185/api/v1";
+  import.meta.env.VITE_API_URL ||
+  "https://userpro348.pythonanywhere.com/api/v1";
 
 class ApiService {
   constructor() {
